@@ -1,12 +1,13 @@
 .header {
   border-bottom: 1px solid #ececec;
+  position: relative;
 }
 
 .header__cotainer {
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 480px) {
     justify-content: space-between;
   }
 }
@@ -78,7 +79,7 @@
 
 .menu-button {
   display: inline-flex;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   border: 0;
   background-color: transparent;
@@ -92,14 +93,14 @@
   }
 }
 
-// .menu-button .icon-close {
-//   display: none;
-// }
+.menu-button .icon-close {
+  display: none;
+}
 
-// .menu-button.is-open .icon-close {
-//   display: block;
-// }
+.menu-button.is-open .icon-close {
+  display: block;
+}
 
-// .menu-button.is-open .icon-menu {
-//   display: none;
-// }
+.menu-button.is-open .icon-menu {
+  display: none;
+}
