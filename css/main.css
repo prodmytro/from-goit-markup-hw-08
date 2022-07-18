@@ -741,7 +741,7 @@ span.logo-prefix {
 
 .menu-button {
   position: relative;
-  z-index: 100;
+  z-index: 10;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
