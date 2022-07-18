@@ -90,13 +90,6 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
-
-  transition: fill var(--transition);
-
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-  }
 }
 
 .menu-button .icon-close {

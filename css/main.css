@@ -750,16 +750,11 @@ span.logo-prefix {
   border: 0;
   background-color: transparent;
   cursor: pointer;
-  -webkit-transition: fill var(--transition);
-  transition: fill var(--transition);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
-}
-.menu-button:hover, .menu-button:focus {
-  fill: var(--accent-color);
 }
 
 .menu-button .icon-close {
