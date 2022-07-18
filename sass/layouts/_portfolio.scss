@@ -6,6 +6,18 @@
   }
 }
 
+.portfolio-list {
+  --item: 1;
+
+  @media screen and (min-width: 768px) {
+    --item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --item: 3;
+  }
+}
+
 .portfolio-item-link {
   transition: color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
   display: flex;
@@ -29,10 +41,10 @@
   width: 450px;
   height: 294px;
 
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 294px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   width: 354px;
+  //   height: 294px;
+  // }
 }
 
 .portfolio-item-link-overlay {

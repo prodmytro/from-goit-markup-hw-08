@@ -62,10 +62,10 @@
 
 .our-team-soc {
   margin-top: 16px;
-  --item: 4;
-  --indent: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .our-team-soc-link {

@@ -27,6 +27,12 @@
         <a class="logo header__logo logo__black link" href="./"
           ><span class="logo-prefix">Web</span>Studio</a
         >
+        <button type="button" class="menu-button" data-menu-button>
+          <svg width="40" height="40" aria-label="Mobile menu switcher">
+            <use class="icon-close" href="./images/icons.svg#close-40px"></use>
+            <use class="icon-menu" href="./images/icons.svg#menu-40px"></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="nav__list list">
             <li class="nav__item">
@@ -87,9 +93,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/tehnokryak.jpg"
+                    srcset="
+                      ./images/portfolio/tehnokryak.jpg    1x,
+                      ./images/portfolio/tehnokryak@2x.jpg 2x
+                    "
+                    src="./images/tehnokryak.jpg"
                     alt="Сайт технокряк"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -108,9 +118,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/poster-new-orlean.jpg"
+                    srcset="
+                      ./images/portfolio/poster-new-orlean.jpg    1x,
+                      ./images/portfolio/poster-new-orlean@2x.jpg 2x
+                    "
+                    src="./images/poster-new-orlean.jpg"
                     alt="Постер New Orlean"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -129,9 +143,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/restraunt-seafood.jpg"
+                    srcset="
+                      ./images/portfolio/restraunt-seafood.jpg    1x,
+                      ./images/portfolio/restraunt-seafood@2x.jpg 2x
+                    "
+                    src="./images/restraunt-seafood.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -150,9 +168,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/project-prime.jpg"
+                    srcset="
+                      ./images/portfolio/project-prime.jpg    1x,
+                      ./images/portfolio/project-prime@2x.jpg 2x
+                    "
+                    src="./images/project-prime.jpg"
                     alt="Проект Prime"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -171,9 +193,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/project-boxes.jpg"
+                    srcset="
+                      ./images/portfolio/project-boxes.jpg    1x,
+                      ./images/portfolio/project-boxes@2x.jpg 2x
+                    "
+                    src="./images/project-boxes.jpg"
                     alt="Проект Boxes"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -192,9 +218,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/inspiration-has-borders.jpg"
+                    srcset="
+                      ./images/portfolio/inspiration-has-borders.jpg    1x,
+                      ./images/portfolio/inspiration-has-borders@2x.jpg 2x
+                    "
+                    src="./images/inspiration-has-borders.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -213,9 +243,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/limited-edition.jpg"
+                    srcset="
+                      ./images/portfolio/limited-edition.jpg    1x,
+                      ./images/portfolio/limited-edition@2x.jpg 2x
+                    "
+                    src="./images/limited-edition.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -234,9 +268,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/project-lab.jpg"
+                    srcset="
+                      ./images/portfolio/project-lab.jpg    1x,
+                      ./images/portfolio/project-lab@2x.jpg 2x
+                    "
+                    src="./images/project-lab.jpg"
                     alt="Проект LAB"
-                    width="370"
+                    width="450"
                     height="294"
                   />
                   <p class="portfolio-item-link-overlay">
@@ -255,9 +293,13 @@
               <a class="portfolio-item-link link" href="#">
                 <div class="portfolio-item-link-group">
                   <img
-                    src="./images/portfolio/growing-business.jpg"
+                    srcset="
+                      ./images/portfolio/growing-business.jpg    1x,
+                      ./images/portfolio/growing-business@2x.jpg 2x
+                    "
+                    src="./images/growing-business.jpg"
                     alt="Growing Business"
-                    width="370"
+                    width="450"
                   />
                   <p class="portfolio-item-link-overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -353,6 +395,48 @@
         </div>
       </div>
     </footer>
+    <!-- mobil menu -->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link mobile-menu__nav-link--current link" href="./">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--current link"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

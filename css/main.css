@@ -60,6 +60,8 @@ p:last-child {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -928,13 +930,11 @@ span.logo-prefix {
 
 .whatwedo {
   display: none;
-  padding-top: 47px;
 }
 @media screen and (min-width: 1200px) {
   .whatwedo {
     display: block;
     padding-top: 94px;
-    padding-bottom: 94px;
   }
 }
 
@@ -1044,10 +1044,16 @@ span.logo-prefix {
 
 .our-team-soc {
   margin-top: 16px;
-  --item: 4;
-  --indent: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
 }
 
 .our-team-soc-link {
@@ -1404,6 +1410,20 @@ footer {
   }
 }
 
+.portfolio-list {
+  --item: 1;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    --item: 2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-list {
+    --item: 3;
+  }
+}
+
 .portfolio-item-link {
   -webkit-transition: color 250ms var(--cubic-bezier), -webkit-box-shadow 250ms var(--cubic-bezier);
   transition: color 250ms var(--cubic-bezier), -webkit-box-shadow 250ms var(--cubic-bezier);
@@ -1434,12 +1454,6 @@ footer {
 .portfolio-item-link-group img {
   width: 450px;
   height: 294px;
-}
-@media screen and (min-width: 768px) {
-  .portfolio-item-link-group img {
-    width: 354px;
-    height: 294px;
-  }
 }
 
 .portfolio-item-link-overlay {
