@@ -1,5 +1,16 @@
+.portfolio {
+  @include section(60px);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px);
+  }
+}
+
 .portfolio-item-link {
   transition: color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .portfolio-item-link:hover,
@@ -14,13 +25,31 @@
   overflow: hidden;
 }
 
+.portfolio-item-link-group img {
+  width: 450px;
+  height: 294px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+}
+
 .portfolio-item-link-overlay {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   width: 100%;
   height: 100%;
+
+  @media screen and (min-width: 768px) {
+    padding: 49px 24px 77px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 
   transform: translateY(100%);
   transition: transform var(--anim);
@@ -41,6 +70,7 @@
 }
 
 .portfolio-wrapper {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;

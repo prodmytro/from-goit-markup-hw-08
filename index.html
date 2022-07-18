@@ -28,6 +28,12 @@
           ><span class="logo-prefix">Web</span>Studio</a
         >
         <nav class="nav">
+          <button type="button" class="menu-button" data-menu-button>
+            <svg width="40" height="40" aria-label="Mobile menu switcher">
+              <use class="icon-close" href="./images/icons.svg#close-40px"></use>
+              <use class="icon-menu" href="./images/icons.svg#menu-40px"></use>
+            </svg>
+          </button>
           <ul class="nav__list list">
             <li class="nav__item">
               <a href="./" class="nav__link nav__link--current link">Студия</a>
@@ -36,7 +42,7 @@
               <a href="./portfolio.html" class="nav__link link">Портфолио</a>
             </li>
             <li class="nav__item">
-              <a href="" class="nav__link link">Контакты</a>
+              <a href="#" class="nav__link link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -44,7 +50,7 @@
         <ul class="header__contacts list">
           <li class="header__contacts-item">
             <a href="mailto:info@devstudio.com" class="header__contacts-link link">
-              <svg width="16" height="12" class="header__contacts-icon">
+              <svg width="14" height="10" class="header__contacts-icon header__contacts-icon--mail">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
@@ -52,7 +58,7 @@
           </li>
           <li class="header__contacts-item">
             <a href="tel:+380961111111" class="header__contacts-link link">
-              <svg width="10" height="16" class="header__contacts-icon">
+              <svg width="10" height="14" class="header__contacts-icon header__contacts-icon--tel">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -64,13 +70,13 @@
     <main>
       <section class="hero">
         <div class="container">
-          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+          <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+          <button type="button" class="hero__btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <section class="asset">
         <div class="container">
-          <h2 class="visually-hidden">Наши преимущества</h2>
+          <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="asset__list card-set list">
             <li class="card-set__item">
               <div class="asset__wrapper">
@@ -78,9 +84,9 @@
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="asset__title">Внимание к деталям</h3>
+              <h3 class="asset__title">Увага до деталей</h3>
               <p class="asset__text">
-                Идейные соображения, а также начало повседневной работы по формированию позиции.
+                Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
             <li class="card-set__item">
@@ -89,9 +95,9 @@
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="asset__title">Пунктуальность</h3>
+              <h3 class="asset__title">Пунктуальність</h3>
               <p class="asset__text">
-                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+                Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
             <li class="card-set__item">
@@ -100,9 +106,9 @@
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="asset__title">Планирование</h3>
+              <h3 class="asset__title">Планування</h3>
               <p class="asset__text">
-                Равным образом консультация с широким активом в значительной степени обуславливает.
+                Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
             <li class="card-set__item">
@@ -111,9 +117,9 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="asset__title">Современные технологии</h3>
+              <h3 class="asset__title">Сучасні технології</h3>
               <p class="asset__text">
-                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+                Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
           </ul>
@@ -121,37 +127,44 @@
       </section>
       <section class="whatwedo">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="whatwedo__list card-set list">
             <li class="card-set__item what-we-do-item">
               <img
+                srcset="
+                  ./images/whatwedo/desktop-app.jpg    1x,
+                  ./images/whatwedo/desktop-app@2x.jpg 2x
+                "
                 src="./images/box1.png"
                 class="what-we-do-img"
                 alt="box1"
                 width="370"
                 height="294"
+                sizes=""
               />
-              <div class="label"><p class="what-we-do-text">Десктопные приложения</p></div>
+              <div class="label"><p class="what-we-do-text">Десктопні додатки</p></div>
             </li>
             <li class="card-set__item what-we-do-item">
               <img
+                srcset="./images/whatwedo/mobile-app.jpg 1x, ./images/whatwedo/mobile-app@2x.jpg 2x"
                 src="./images/box2.png"
                 class="what-we-do-img"
                 alt="box2"
                 width="370"
                 height="294"
               />
-              <div class="label"><p class="what-we-do-text">Мобильные приложения</p></div>
+              <div class="label"><p class="what-we-do-text">Мобільні додаки</p></div>
             </li>
             <li class="card-set__item what-we-do-item">
               <img
+                srcset="./images/whatwedo/design.jpg 1x, ./images/whatwedo/design@2x.jpg 2x"
                 src="./images/box3.png"
                 class="what-we-do-img"
                 alt="box3"
                 width="370"
                 height="294"
               />
-              <div class="label"><p class="what-we-do-text">Дизайнерские решения</p></div>
+              <div class="label"><p class="what-we-do-text">Дизайнерські рішення</p></div>
             </li>
           </ul>
         </div>
@@ -161,7 +174,15 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="our-team-list card-set list">
             <li class="card-set__item our-team-item">
-              <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <img
+                class="our-team-photo"
+                srcset="./images/ourteam/igor.jpg 450w, ./images/ourteam/igor@2x.jpg 900w"
+                src="./images/igor.jpg"
+                alt="Игорь Демьяненко"
+                width="450"
+                height="460"
+                sizes="(min-width: 768px) 30vw, (min-width: 480px) 90vw"
+              />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Игорь Демьяненко</h3>
                 <p class="our-team-position">Product Designer</p>
@@ -198,7 +219,15 @@
               </div>
             </li>
             <li class="card-set__item our-team-item">
-              <img src="./images/olga.jpg" alt="Ольга Репина" width="270" height="260" />
+              <img
+                class="our-team-photo"
+                srcset="./images/ourteam/olga.jpg 450w, ./images/ourteam/olga@2x.jpg 900w"
+                src="./images/olga.jpg"
+                alt="Ольга Репина"
+                width="450"
+                height="460"
+                sizes="(min-width: 768px) 30vw, (min-width: 480px) 90vw"
+              />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Ольга Репина</h3>
                 <p class="our-team-position">Frontend Developer</p>
@@ -235,7 +264,15 @@
               </div>
             </li>
             <li class="card-set__item our-team-item">
-              <img src="./images/nikolai.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <img
+                class="our-team-photo"
+                srcset="./images/ourteam/nikolay.jpg 450w, ./images/ourteam/nikolay@2x.jpg 900w"
+                src="./images/nikolai.jpg"
+                alt="Николай Тарасов"
+                width="450"
+                height="460"
+                sizes="(min-width: 768px) 30vw, (min-width: 480px) 90vw"
+              />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Николай Тарасов</h3>
                 <p class="our-team-position">Marketing</p>
@@ -272,7 +309,15 @@
               </div>
             </li>
             <li class="card-set__item our-team-item">
-              <img src="./images/mikhail.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <img
+                class="our-team-photo"
+                srcset="./images/ourteam/miha.jpg 450w, ./images/ourteam/miha@2x.jpg 900w"
+                src="./images/mikhail.jpg"
+                alt="Михаил Ермаков"
+                width="450"
+                height="460"
+                sizes="(min-width: 768px) 30vw, (min-width: 480px) 90vw"
+              />
               <div class="our-team-wrapper">
                 <h3 class="our-team-name">Михаил Ермаков</h3>
                 <p class="our-team-position">UI Designer</p>
@@ -313,7 +358,7 @@
       </section>
       <section class="perm-clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="section-title">Постійні клієнти</h2>
           <ul class="perm-clients-list card-set list">
             <li class="perm-client-item card-set__item">
               <a href="#" class="perm-clients-link">
@@ -364,59 +409,61 @@
     <footer>
       <div class="container">
         <div class="footer">
-          <div class="footer-left">
-            <a href="./" class="logo logo__white link"
-              ><span class="logo-prefix">Web</span>Studio</a
-            >
-            <address class="footer-addr">
-              <ul class="footer-contacts list">
-                <li class="footer-contacts-item adress">г. Киев, пр-т Леси Украинки, 26</li>
-                <li class="footer-contacts-item">
-                  <a href="mailto:info@example.com" class="footer-contacts link"
-                    >info@example.com</a
-                  >
+          <div class="footer-main">
+            <div class="footer-left">
+              <a href="./" class="logo logo__white link"
+                ><span class="logo-prefix">Web</span>Studio</a
+              >
+              <address class="footer-addr">
+                <ul class="footer-contacts list">
+                  <li class="footer-contacts-item adress">м. Київ, пр-т Лесі Українки, 26</li>
+                  <li class="footer-contacts-item">
+                    <a href="mailto:info@example.com" class="footer-contacts link"
+                      >info@example.com</a
+                    >
+                  </li>
+                  <li class="footer-contacts-item">
+                    <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <div class="footer-socials">
+              <h2 class="footer-socials-header">приєднуйтесь</h2>
+              <ul class="footer-soc-set card-set list">
+                <li class="card-set__item">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons.svg#icon-insta"></use>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-contacts-item">
-                  <a href="tel:+380991111111" class="footer-contacts link">+38 099 111 11 11</a>
+                <li class="card-set__item">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons.svg#icon-twttr"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="card-set__item">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons.svg#icon-fb"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="card-set__item">
+                  <a href="#" class="footer-soc-link">
+                    <svg class="footer-soc-icon">
+                      <use href="./images/icons.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </address>
-          </div>
-          <div class="footer-socials">
-            <h2 class="footer-socials-header">присоединяйтесь</h2>
-            <ul class="footer-soc-set card-set list">
-              <li class="card-set__item">
-                <a href="#" class="footer-soc-link">
-                  <svg class="footer-soc-icon">
-                    <use href="./images/icons.svg#icon-insta"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-set__item">
-                <a href="#" class="footer-soc-link">
-                  <svg class="footer-soc-icon">
-                    <use href="./images/icons.svg#icon-twttr"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-set__item">
-                <a href="#" class="footer-soc-link">
-                  <svg class="footer-soc-icon">
-                    <use href="./images/icons.svg#icon-fb"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="card-set__item">
-                <a href="#" class="footer-soc-link">
-                  <svg class="footer-soc-icon">
-                    <use href="./images/icons.svg#icon-linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
+            </div>
           </div>
           <div class="footer-email-input">
-            <h2 class="footer-socials-header">Подпишитесь на рассылку</h2>
+            <h2 class="footer-socials-header">Підпишіться на розсилку</h2>
             <form class="footer-form" action="footer-form">
               <input
                 class="footer-email-input-field"
@@ -426,7 +473,7 @@
               />
               <div class="footer-form-btn">
                 <button type="submit" class="footer-sign-btn">
-                  Подписаться
+                  Підписатися
                   <svg width="24" height="24" class="footer-btn-icon-send">
                     <use href="./images/icons.svg#icon-send"></use>
                   </svg>
@@ -445,11 +492,11 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
-        <strong class="modal-header">Оставьте свои данные, мы вам перезвоним</strong>
+        <strong class="modal-header">Залиште свої дані, ми вам передзвонимо</strong>
         <form class="form">
           <div class="form-main">
             <div class="form-field">
-              <label class="form-label" for="username">Имя</label>
+              <label class="form-label" for="username">Ім'я</label>
               <input class="form-input" type="text" name="username" id="username" />
               <svg class="modal-icon-field" width="18" height="18">
                 <use href="./images/icons.svg#icon-person"></use>
@@ -463,19 +510,19 @@
               </svg>
             </div>
             <div class="form-field">
-              <label class="form-label" for="email">Почта</label>
+              <label class="form-label" for="email">Пошта</label>
               <input class="form-input" type="email" name="email" id="email" />
               <svg class="modal-icon-field" width="18" height="18">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
             <div class="form-field">
-              <label class="form-label" for="comment">Комментарий</label>
+              <label class="form-label" for="comment">Коментар</label>
               <textarea
                 class="textarea-comment"
                 name="comment"
                 id="comment"
-                placeholder="Введите текст"
+                placeholder="Введіть текст"
               >
               </textarea>
             </div>
@@ -484,15 +531,58 @@
             <label class="checkbox-txt">
               <input class="checkbox" type="checkbox" name="polisy" id="polisy" />
               <span class="checkbox-icon"></span>
-              Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+              Погоджуюся з розсилкою та приймаю <a href="#">Умови договору</a>
             </label>
           </div>
           <div class="form-submit">
-            <button type="submit" class="form-btn">Отправить</button>
+            <button type="submit" class="form-btn">Відправити</button>
           </div>
         </form>
       </div>
     </div>
+    <!-- mobil menu -->
+    <div class="mobile-menu" data-menu>
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link mobile-menu__nav-link--current link" href="./">Студія</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="./portfolio.html">Портфоліо</a>
+        </li>
+        <li class="mobile-menu__nav-item">
+          <a class="mobile-menu__nav-link link" href="#">Контакти</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contacts list">
+        <li class="mobile-menu__contacts-item">
+          <a
+            class="mobile-menu__contacts-link mobile-menu__contacts-link--current link"
+            href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contacts-item">
+          <a class="mobile-menu__contacts-link link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__socials list">
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Instagram</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Twitter</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">Facebook</a>
+        </li>
+        <li class="mobile-menu__socials-item">
+          <a class="mobile-menu__socials-link link" href="">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,13 +1,21 @@
 .asset {
-  // @extend %section;
-  @include section(94px);
+  @include section(60px);
 
-  padding-bottom: 47px;
+  @media screen and (min-width: 1200px) {
+    @include section(47px);
+  }
 }
 
 .asset__list {
-  --item: 4;
-  margin: -15px;
+  --item: 1;
+
+  @media screen and (min-width: 768px) {
+    --item: 2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    --item: 4;
+  }
 }
 
 .asset__title {
@@ -18,16 +26,28 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 
 .asset__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .asset__text {
