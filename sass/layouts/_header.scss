@@ -78,17 +78,23 @@
 }
 
 .menu-button {
+  position: relative;
+  z-index: 100;
   display: inline-flex;
   margin-left: auto;
   padding: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 
   @media screen and (min-width: 768px) {
     display: none;
   }
 
-  &:hover {
+  transition: fill var(--transition);
+
+  &:hover,
+  &:focus {
     fill: var(--accent-color);
   }
 }

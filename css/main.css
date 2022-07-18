@@ -740,6 +740,8 @@ span.logo-prefix {
 }
 
 .menu-button {
+  position: relative;
+  z-index: 100;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -747,13 +749,16 @@ span.logo-prefix {
   padding: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: fill var(--transition);
+  transition: fill var(--transition);
 }
 @media screen and (min-width: 768px) {
   .menu-button {
     display: none;
   }
 }
-.menu-button:hover {
+.menu-button:hover, .menu-button:focus {
   fill: var(--accent-color);
 }
 
