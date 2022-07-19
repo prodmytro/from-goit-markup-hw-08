@@ -61,6 +61,7 @@ p:last-child {
 img {
   display: block;
   max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -796,7 +797,8 @@ span.logo-prefix {
 }
 
 .hero__title {
-  width: 360px;
+  max-width: 360px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -859,7 +861,7 @@ span.logo-prefix {
 }
 @media screen and (min-width: 1200px) {
   .asset {
-    padding-top: 47px;
+    padding-top: 94px;
     padding-bottom: 47px;
   }
 }
@@ -934,7 +936,7 @@ span.logo-prefix {
 @media screen and (min-width: 1200px) {
   .whatwedo {
     display: block;
-    padding-top: 94px;
+    padding-top: 47px;
   }
 }
 
@@ -1291,7 +1293,7 @@ footer {
 }
 
 .footer-email-input {
-  margin: 60px;
+  margin-top: 60px;
   text-align: center;
   display: inline-block;
   margin-left: auto;
@@ -1334,7 +1336,8 @@ footer {
 }
 
 .footer-email-input-field {
-  width: 450px;
+  max-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1453,7 +1456,7 @@ footer {
 
 .portfolio-item-link-group img {
   width: 450px;
-  height: 294px;
+  height: auto;
 }
 
 .portfolio-item-link-overlay {

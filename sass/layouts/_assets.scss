@@ -2,7 +2,8 @@
   @include section(60px);
 
   @media screen and (min-width: 1200px) {
-    @include section(47px);
+    padding-top: 94px;
+    padding-bottom: 47px;
   }
 }
 
