@@ -2,7 +2,6 @@
   @include section(118px);
 
   max-width: 1600px;
-  height: 400px;
 
   margin-left: auto;
   margin-right: auto;
@@ -26,7 +25,8 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/hero-bg@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/hero-bg@2x.jpg);
   }
 }
 
